@@ -42,7 +42,47 @@ import FlagIcon from 'vue3-flag-icons'
 </template>
 ```
 
-<sub><sup>(Note: the component is the default export so you can name it however you want. Here we have used `FlagIcon`, but you could just as easily use `Flag` or `CountryFlag` or whatever you want - just be consistent with your naming for code clarity.)</sup></sub>
+<sub>(Note: the component is the default export so you can name it however you want. Here we have used `FlagIcon`, but you could just as easily use `Flag` or `CountryFlag` or whatever you want - just be consistent with your naming for code clarity.)</sup>
+
+## Utilities
+
+The library also provides utility functions:
+
+- `getCountryName(code)`: Returns the English name of the country for the given code, or 'Unknown' if invalid.
+- `isValidCountryCode(code)`: Checks if the provided code corresponds to a valid country flag.
+- `getAllCountryCodes()`: Returns an array of all available country codes.
+
+```typescript
+import { getCountryName, isValidCountryCode, getAllCountryCodes } from 'vue3-flag-icons'
+
+console.log(getCountryName('us')) // 'United States'
+console.log(isValidCountryCode('us')) // true
+console.log(getAllCountryCodes()) // ['ad', 'ae', ...]
+```
+
+## Nuxt 3 Usage
+
+In Nuxt 3, add the CSS to your `nuxt.config.ts`:
+
+```typescript
+export default defineNuxtConfig({
+  css: ['vue3-flag-icons/styles']
+})
+```
+
+Then, use the component in your pages or components:
+
+```vue
+<script setup lang="ts">
+import FlagIcon from 'vue3-flag-icons'
+</script>
+
+<template>
+  <FlagIcon code="us" />
+</template>
+```
+
+The component is SSR-compatible.
 
 ## Props
 
@@ -59,3 +99,7 @@ The component takes the following props:
 - Inspired by [`vue-flag-icon`](https://github.com/vikkio88/vue-flag-icon/), a similar non-TypeScript-compatible Vue2 project.
 
 - Uses the [`flag-icons`](https://github.com/lipis/flag-icons) package for all the flags.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on how to contribute to this project.
