@@ -7,12 +7,14 @@ Thank you for your interest in contributing to vue3-flag-icons! This project wel
 1. **Fork the Repository**: Click the "Fork" button on GitHub to create your own copy of the repository.
 
 2. **Clone Your Fork**:
+
    ```bash
    git clone https://github.com/your-username/vue3-flag-icons.git
    cd vue3-flag-icons
    ```
 
 3. **Create a Branch**: Create a new branch for your changes.
+
    ```bash
    git checkout -b feature/your-feature-name
    ```
@@ -20,6 +22,7 @@ Thank you for your interest in contributing to vue3-flag-icons! This project wel
 4. **Make Changes**: Implement your changes, ensuring you follow the project's coding standards.
 
 5. **Run Tests**: Make sure all tests pass.
+
    ```bash
    npm install
    npm test
@@ -27,12 +30,14 @@ Thank you for your interest in contributing to vue3-flag-icons! This project wel
    ```
 
 6. **Commit Your Changes**:
+
    ```bash
    git add .
    git commit -m "Description of your changes"
    ```
 
 7. **Push to Your Fork**:
+
    ```bash
    git push origin feature/your-feature-name
    ```
