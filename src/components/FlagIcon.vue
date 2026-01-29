@@ -21,6 +21,8 @@ const computedTitle: string =
     :class="[square || circle ? 'fis' : '', `fi-${code.toLowerCase()}`, circle ? 'round' : '']"
     :style="size ? `font-size:${size}px` : undefined"
     :title="computedTitle"
+    :aria-label="computedTitle"
+    role="img"
   />
 </template>
 
