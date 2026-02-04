@@ -34,7 +34,7 @@
         "default": "./dist/vue3-flag-icons.umd.cjs"
       }
     },
-    "./styles": "./dist/style.css",
+    "./styles": "./dist/vue3-flag-icons.css",
     "./types": {
       "types": "./dist/types/index.d.ts",
       "default": "./dist/types/index.d.ts"
