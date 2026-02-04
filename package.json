@@ -1,7 +1,7 @@
 {
   "name": "vue3-flag-icons",
   "private": false,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A vue3 component library for flag icons",
   "author": "Gavin Lloyd Baker",
   "repository": {
