@@ -1,6 +1,6 @@
 {
 	"name": "vue3-flag-icons",
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:0-20",
+	"image": "mcr.microsoft.com/devcontainers/typescript-node:22",
 	"postCreateCommand": "npm i",
 	"customizations": {
 		"vscode": {
