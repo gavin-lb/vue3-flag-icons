@@ -1,4 +1,7 @@
-# vue3-flag-icons [![npm](https://img.shields.io/npm/v/vue3-flag-icons)](https://www.npmjs.com/package/vue3-flag-icons)
+# vue3-flag-icons 
+[![npm](https://img.shields.io/npm/v/vue3-flag-icons)](https://www.npmjs.com/package/vue3-flag-icons)
+[![MIT license](https://img.shields.io/github/license/gavin-lb/vue3-flag-icons)](LICENSE)
+
 
 A TypeScript-compatible Vue3 component library for providing flag icons.
 
