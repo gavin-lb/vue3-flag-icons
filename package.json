@@ -4,6 +4,7 @@
   "version": "0.1.2",
   "description": "A vue3 component library for flag icons",
   "author": "Gavin Lloyd Baker",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gavin-lb/vue3-flag-icons.git"
