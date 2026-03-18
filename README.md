@@ -39,23 +39,7 @@ import FlagIcon from 'vue3-flag-icons'
 
 <sub>(Note: the component is the default export so you can name it however you want. Here we have used `FlagIcon`, but you could just as easily use `Flag` or `CountryFlag` or whatever you want - just be consistent with your naming for code clarity.)</sup>
 
-## Utilities
-
-The library also provides utility functions:
-
-- `getCountryName(code)`: Returns the English name of the country for the given code, or 'Unknown' if invalid.
-- `isValidCountryCode(code)`: Checks if the provided code corresponds to a valid country flag.
-- `getAllCountryCodes()`: Returns an array of all available country codes.
-
-```typescript
-import { getCountryName, isValidCountryCode, getAllCountryCodes } from 'vue3-flag-icons'
-
-console.log(getCountryName('us')) // 'United States'
-console.log(isValidCountryCode('us')) // true
-console.log(getAllCountryCodes()) // ['ad', 'ae', ...]
-```
-
-## Nuxt 3 Usage
+### Nuxt 3 Usage
 
 In Nuxt 3, add the CSS to your `nuxt.config.ts`:
 
@@ -88,6 +72,22 @@ The component takes the following props:
 - `square?: boolean`: if true the flag will be rendered as a 1x1 square, otherwise it will be rendered as a 4x3.
 - `circle?: boolean`: if true the flag will be rendered as a circle.
 - `title?: string | ((country: string) => string)`: the mouseover tooltip of the icon, defaults to the name of the country.
+
+## Utilities
+
+The library also provides utility functions:
+
+- `getCountryName(code)`: Returns the English name of the country for the given code, or 'Unknown' if invalid.
+- `isValidCountryCode(code)`: Checks if the provided code corresponds to a valid country flag.
+- `getAllCountryCodes()`: Returns an array of all available country codes.
+
+```typescript
+import { getCountryName, isValidCountryCode, getAllCountryCodes } from 'vue3-flag-icons'
+
+console.log(getCountryName('us')) // 'United States'
+console.log(isValidCountryCode('us')) // true
+console.log(getAllCountryCodes()) // ['ad', 'ae', ...]
+```
 
 ## Credits
 
