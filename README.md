@@ -4,31 +4,23 @@ A TypeScript-compatible Vue3 component library for providing flag icons.
 
 ## Install
 
-```
+```bash
 npm install vue3-flag-icons
 ```
 
 ## Usage
 
-Firstly, you need to import the CSS. It is recommended that you do this at the app level, for example while creating and mounting your app:
-
-> `main.ts`:
-
-<pre>
+Firstly, you need to import the CSS. It is recommended that you do this at the app level, for example while creating and mounting your app in `main.ts`:
+```typescript
 import App from '@/App.vue'
 import { createApp } from 'vue'
-<b>import 'vue3-flag-icons/styles'</b>  // <-- importing the css
-
+import 'vue3-flag-icons/styles'  // <-- importing the css
 createApp(App).mount('#app')
-</pre>
-
+```
 but you could also just import the CSS whenever you import the component.
 
-To use the component, just import it and use it:
-
-> `App.vue`:
-
-```
+To use the component, just import it and use it, for example in `App.vue`:
+```vue
 <script setup lang="ts">
 import FlagIcon from 'vue3-flag-icons'
 </script>
