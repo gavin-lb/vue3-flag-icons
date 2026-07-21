@@ -56,6 +56,16 @@ describe('FlagIcon', () => {
     expect(wrapper.attributes('title')).toBe('Custom Title')
   })
 
+  it('renders non-ISO-3166 flag (es-ct) without throwing', () => {
+    const wrapper = mount(FlagIcon, {
+      props: {
+        code: 'es-ct'
+      }
+    })
+    expect(wrapper.classes()).toContain('fi-es-ct')
+    expect(wrapper.attributes('title')).toBe('Unknown') // Intl.DisplayNames.of('ES-CT') throws RangeError; title must fall back to 'Unknown'
+  })
+
   it('uses function title', () => {
     const wrapper = mount(FlagIcon, {
       props: {

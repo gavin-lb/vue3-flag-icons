@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { CountryCode } from '@/types'
+import { getCountryName } from '@/utils'
 
 const props = defineProps<{
   code: CountryCode
@@ -9,8 +10,8 @@ const props = defineProps<{
   title?: string | ((country: string) => string)
 }>()
 
-const country: string =
-  new Intl.DisplayNames(['en'], { type: 'region' }).of(props.code.toUpperCase()) || 'Unknown'
+const country: string = getCountryName(props.code)
+
 const computedTitle: string =
   props.title instanceof Function ? props.title(country) : props.title || country
 </script>
