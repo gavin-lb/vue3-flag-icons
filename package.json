@@ -75,5 +75,8 @@
     "vite-plugin-dts": "^4.2.3",
     "vitest": "^4.0.18",
     "vue-tsc": "^2.2.0"
+  },
+  "allowScripts": {
+    "esbuild@0.25.12": true
   }
 }
